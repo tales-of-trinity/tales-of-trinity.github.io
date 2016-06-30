@@ -6,12 +6,18 @@ permalink: /about/
 
 Impressum
 
-Tales of Trinity
-Rotdornweg 17
-53177 bonn
-Telefon: +49 173 2995885
-E-Mail: tales.of.trinity.lps@gmai.com
-Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV):
+ Tales of Trinity
+
+ Rotdornweg 17
+
+ 53177 bonn
+
+ Telefon: +49 173 2995885
+
+ E-Mail: tales.of.trinity.lps@gmai.com
+
+ Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV):
+
 Michael Wegner
 
 
