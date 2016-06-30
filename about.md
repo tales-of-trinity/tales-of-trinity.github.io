@@ -4,9 +4,11 @@ title: Impressum
 permalink: /about/
 ---
 
-Impressum
+
 
  Tales of Trinity
+
+ Michael Wegner
 
  Rotdornweg 17
 
