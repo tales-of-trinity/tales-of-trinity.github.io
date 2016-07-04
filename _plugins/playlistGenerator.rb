@@ -1,11 +1,18 @@
 module PlaylistGenerator
   class Generator < Jekyll::Generator
-    def generate(site)
-      #ongoing, done = Book.all.partition(&:ongoing?)
+    require 'json'
+    require 'open-uri'
 
-      #reading = site.pages.detect {|page| page.name == 'reading.html'}
-      #reading.data['ongoing'] = ongoing
-      #reading.data['done'] = done
+    def generate(site)
+      url = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&key=XXX&channelId=UCn0PbkRMNmQ-MAFvMWrhc-A&playlistId=PLsyA7GBLQIf5cx-fCtRNZoYQfxnGaW_R3"
+
+      videos = JSON.load(open(url))
+
+      site.data['videos'] = Array.new
+
+      for video in videos['items']
+        site.data['videos'] << video['contentDetails']['videoId']
+      end
     end
   end
 end

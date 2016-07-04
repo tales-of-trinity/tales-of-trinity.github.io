@@ -18,7 +18,11 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% youtube yFTvbcNhEgc?list=RDyFTvbcNhEgc %}
+  {% for video in site.data.videos %}
+    <div class="video">
+      <iframe width="640" height="480" src="//www.youtube.com/embed/{{ video }}" allowfullscreen></iframe>
+    </div>
+  {% endfor %}
 
   <p class="rss-subscribe">subscribe uns auf <a href="https://www.youtube.com/channel/UCn0PbkRMNmQ-MAFvMWrhc-A">Youtube</a></p>
 
