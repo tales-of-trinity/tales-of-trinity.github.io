@@ -19,3 +19,4 @@ facebook_username: xxxx
 # Build settings
 markdown: kramdown
 youtube_token: xxxx
+youtube_channel: xxxx
