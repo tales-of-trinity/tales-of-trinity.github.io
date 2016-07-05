@@ -6,15 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Tales of Trinity
-email: tales.of.trinity.lps@gmail.com
+title: Lorem Ipsum
+email: lorem@ipsum.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hier findest Du die Let´ Plays die Dir gefallen!!!
-  Besuche uns doch auch auf Twitter und co. um auf dem neusten Stand zu sein.
+  Lorem ipsum
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tales-of-trinity.github.io" # the base hostname & protocol for your site
-twitter_username: talesoftrinity
-github_username:  tales-of-trinity
+url: "http://your-site.com" # the base hostname & protocol for your site
+twitter_username: xxxx
+github_username:  xxxx
+facebook_username: xxxx
 
 # Build settings
 markdown: kramdown
+youtube_token: xxxx
