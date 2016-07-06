@@ -10,7 +10,7 @@ title: Lorem Ipsum
 email: lorem@ipsum.com
 description: > # this means to ignore newlines until "baseurl:"
   Lorem ipsum
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "http://your-site.com" # the base hostname & protocol for your site
 twitter_username: xxxx
 github_username:  xxxx
