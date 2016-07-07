@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 
+
  Tales of Trinity
 
  Michael Wegner
