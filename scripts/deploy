@@ -2,9 +2,6 @@
 
 set -e
 
-git config user.name "Travis CI"
-git config user.email "tales.of.trinity.lps@gmail.com"
-
 eval `ssh-agent -s`
 ssh-add id_rsa
 
@@ -14,11 +11,14 @@ git checkout gh-pages
 cd ..
 jekyll build
 cd _site
-if [ -z `git diff --exit-code` ]; then
+git diff --exit-code
+if [ $? -eq 0 ]; then
     echo "No changes to the output on this push; exiting."
     exit 0
 fi
 
+git config user.name "Travis CI"
+git config user.email "tales.of.trinity.lps@gmail.com"
 git add .
 git commit -m "Travis deployment to github pages"
 
