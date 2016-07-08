@@ -19,7 +19,7 @@ fi
 
 git config user.name "Travis CI"
 git config user.email "tales.of.trinity.lps@gmail.com"
-git add .
+git add --all .
 git commit -m "Travis deployment to github pages"
 
 git push origin gh-pages
