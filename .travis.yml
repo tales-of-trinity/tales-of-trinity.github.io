@@ -1,6 +1,9 @@
 language: ruby
 rvm:
-  - 2.2
-
-before_install: scripts/decrypt
+- 2.2
+before_install:
+- openssl aes-256-cbc -K $encrypted_32a290f4118d_key -iv $encrypted_32a290f4118d_iv
+  -in id_rsa.enc -out id_rsa -d
+- openssl aes-256-cbc -K $encrypted_32a290f4118d_key -iv $encrypted_32a290f4118d_iv
+  -in _config.yml.enc -out _config.yml -d
 script: scripts/compile
