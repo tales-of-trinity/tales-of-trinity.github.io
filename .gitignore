@@ -5,3 +5,4 @@ _site
 /_config.yml
 /id_rsa
 /secrets.tgz
+Gemfile.lock
