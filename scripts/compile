@@ -1,3 +1,5 @@
 #!/bin/bash
 
+cat _config.yml | head
+
 jekyll build
