@@ -1,0 +1,23 @@
+#!/bin/bash
+
+git config user.name "Travis CI"
+git config user.email "tales.of.trinity.lps@gmail.com"
+
+git clone git@github.com:tales-of-trinity/website.git _site
+cd _site
+git checkout gh-pages
+cd ..
+jekyll build
+cd _site
+if [ -z `git diff --exit-code` ]; then
+    echo "No changes to the output on this push; exiting."
+    exit 0
+fi
+
+git add .
+git commit -m "Travis deployment to github pages"
+
+eval `ssh-agent -s`
+ssh-add ../id_rsa
+
+git push origin gh-pages
