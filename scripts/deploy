@@ -11,8 +11,8 @@ git checkout gh-pages
 cd ..
 jekyll build
 cd _site
-git diff --exit-code
-if [ $? -eq 0 ]; then
+changes=`git diff`
+if [ -z "$changes" ]; then
     echo "No changes to the output on this push; exiting."
     exit 0
 fi
