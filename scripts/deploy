@@ -6,7 +6,7 @@ git config user.name "Travis CI"
 git config user.email "tales.of.trinity.lps@gmail.com"
 
 eval `ssh-agent -s`
-ssh-add ../id_rsa
+ssh-add id_rsa
 
 git clone git@github.com:tales-of-trinity/website.git _site
 cd _site
