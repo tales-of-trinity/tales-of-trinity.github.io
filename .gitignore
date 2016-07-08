@@ -2,4 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 /.idea
-_config.yml
+/_config.yml
+/id_rsa
